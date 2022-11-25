@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            font-family: "Nerko One", cursive;
+            color: #353c4d;
+            font-size: 20px;
+            background: #55aa55;
+            display: grid;
+            grid-template-columns: repeat(9, 1fr);
+        }
+
+        html svg,
+        html img,
+        body svg,
+        body img {
+            height: 15px;
+        }
+
+        .card {
+            width: 100px;
+            height: 150px;
+            border-radius: 6px;
+            background: white;
+            padding: 5px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 3px 6px;
+        }
+
+        .card--person .person {
+            height: 50px;
+        }
+
+        .card__info {
+            display: flex;
+            align-items: center;
+        }
+
+        .card__info:last-of-type {
+            justify-content: flex-end;
+        }
+
+        .card__info img {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script src="./script.js"></script>
+</body>
+
+</html>
