@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(179, 157, 219);
+        }
+
+        .container {
+            display: flex;
+            gap: 100px;
+            justify-content: center;
+            margin-top: 20%;
+            transform: rotateY(-20%);
+        }
+
+        img {
+            cursor: pointer;
+            width: 100px;
+        }
+
+        .wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        p {
+            padding: 5px 10px;
+            width: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box-1" class="wrapper">
+            <img src="images/first.png" alt="emoji">
+            <p id="counter-1">0</p>
+        </div>
+        <div id="box-2" class="wrapper">
+            <img src="images/second.png" alt="emoji">
+            <p id="counter-2">0</p>
+        </div>
+        <div id="box-3" class="wrapper">
+            <img src="images/third.png" alt="emoji">
+            <p id="counter-3">0</p>
+        </div>
+        <div id="box-4" class="wrapper">
+            <img src="images/fourth.png" alt="emoji">
+            <p id="counter-4">0</p>
+        </div>
+        <div id="box-5" class="wrapper">
+            <img src="images/five.png" alt="emoji">
+            <p id="counter-5">0</p>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
