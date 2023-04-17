@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Lesson 35</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #container {
+            margin-left: auto;
+            margin-right: auto;
+            width: 400px;
+        }
+
+        form {
+            margin-top: 200px;
+            background-color: lightblue;
+            padding: 30px;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+
+        }
+
+        #info {
+            margin-top: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: lightblue;
+            width: 530px;
+            padding: 30px;
+        }
+
+        .block {
+            display: none;
+        }
+
+        span {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form>
+            <div>
+                <input id="userName" type="text" placeholder="Name" />
+            </div>
+
+            <div>
+                <input id="userDate" type="text" placeholder="Date of Birth" />
+            </div>
+
+            <div>
+                <input id="man" type="radio" name="sex" value="Man" />
+                <label>Man</label>
+
+                <input id="woman" type="radio" name="sex" value="Woman" />
+                <label>Woman</label>
+            </div>
+
+            <div>
+                <p>City</p>
+                <select id="city">
+                    <option value="New York">New York</option>
+                    <option value="Dallas">Dallas</option>
+                    <option value="Los Angeles">Los Angeles</option>
+                </select>
+            </div>
+
+            <div>
+                <textarea id="userAdress" name="textarea" rows="3" cols="30" placeholder="Your address"></textarea>
+            </div>
+            <div>
+                <p>What language do you speak</p>
+                <div>
+                    <input type="checkbox" id="ukrLang" name="scales" value="Ukrainian" />
+                    <label for="ukrLang">Ukrainian</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="engLang" name="scales" value="English" />
+                    <label for="engLang">English</label>
+                </div>
+            </div>
+            <div>
+                <button id="button" type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="info" class="block">
+        <p>Name:<span></span></p>
+        <p>Date of Birth:<span id="year"></span></p>
+        <p>gender:<span id="gender"></span></p>
+        <p>City:<span id="town"></span></p>
+        <p>Address:<span id="street"></span></p>
+        <p>Language:<span id="language"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
